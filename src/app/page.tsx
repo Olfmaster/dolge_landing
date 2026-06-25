@@ -8,6 +8,7 @@ import Comparison from "@/components/sections/Comparison";
 import Testimonial from "@/components/sections/Testimonial";
 import RiskSection from "@/components/sections/RiskSection";
 import Portfolio from "@/components/sections/Portfolio";
+import Faq from "@/components/sections/Faq";
 import Booklet from "@/components/sections/Booklet";
 import Footer from "@/components/sections/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
@@ -26,6 +27,7 @@ export default function Home() {
         <Testimonial />
         <RiskSection />
         <Portfolio />
+        <Faq />
         <Booklet />
       </main>
       <Footer />

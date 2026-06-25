@@ -15,6 +15,24 @@ export const metadata: Metadata = {
   },
 };
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "DOLGE Systemtechnik GmbH",
+  url: "https://dolge-systemtechnik.de",
+  logo: "https://dolge-systemtechnik.de/images/dolge-logo.png",
+  description:
+    "Experten für saubere Luft: chemisorptive Luftfiltersysteme zum Schutz von Schaltschränken, Schalträumen und Betriebsräumen vor Korrosion, Schadgasen und Überhitzung.",
+  telephone: "+49 5651 22730",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+49-5651-22730",
+    contactType: "sales",
+    areaServed: "DE",
+    availableLanguage: "German",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -26,6 +44,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: "document.documentElement.classList.add('js');",
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
         {children}
       </body>

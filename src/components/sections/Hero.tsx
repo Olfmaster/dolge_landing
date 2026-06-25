@@ -38,6 +38,11 @@ export default function Hero() {
             <span className="text-accent">innovativer Filtrationstechnologie</span>
           </h1>
 
+          <p data-hero className="mt-5 max-w-xl text-base text-white/85 md:text-lg">
+            Kühlung, Klimatisierung und Schutz für Schaltschränke – im Innen- und Außenbereich.
+            Chemisorptive Filtration gegen Korrosion, Schadgase und Überhitzung.
+          </p>
+
           <figure data-hero className="mt-8 border-l-2 border-accent/70 pl-4">
             <blockquote className="text-sm italic text-white/85 md:text-base">
               „Wir hatten durch die Installation der DOLGE-Filteranlage eine deutliche Senkung
