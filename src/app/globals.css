@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* DOLGE Corporate Identity */
+  --color-ink: #100717;        /* tiefes Dunkel-Indigo (Verlauf-Ende, Buttons) */
+  --color-brand: #252254;      /* Primär-Indigo / Navy */
+  --color-brand-600: #2d2a6b;  /* helleres Indigo */
+  --color-brand-400: #3a3580;  /* Verlauf */
+  --color-accent: #0084ff;     /* Akzent-Blau */
+  --color-success: #25b667;    /* Häkchen-Grün */
+  --color-cta: #1d1a47;        /* CTA-Button dunkel */
+  --color-cta-hover: #2d2a6b;
+
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --shadow-card: 0 20px 60px -15px rgba(16, 7, 23, 0.25);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reveal-Startzustand: per GSAP eingeblendet. Ohne JS sichtbar (no-JS fallback). */
+.gsap-reveal {
+  opacity: 1;
+}
+.js .gsap-reveal {
+  opacity: 0;
+}
